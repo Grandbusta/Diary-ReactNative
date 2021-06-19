@@ -21,6 +21,7 @@ const App = () => {
 
   return (
     <PaperProvider>
+      <StatusBar backgroundColor={backgroundStyle.backgroundColor} />
       <DrawerNavigator />
     </PaperProvider>
   );
