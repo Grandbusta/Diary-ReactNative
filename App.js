@@ -13,15 +13,9 @@ import {Colors} from './src/shared/colors';
 import DrawerNavigator from './src/navigators/drawerNavigator';
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
     <PaperProvider>
-      <StatusBar backgroundColor={backgroundStyle.backgroundColor} />
+      <StatusBar backgroundColor={Colors.primary.dark} />
       <DrawerNavigator />
     </PaperProvider>
   );
